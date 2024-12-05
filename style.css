@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+.canvas{
+    border: 2px solid black;
+}
+.top, .bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+    
+}
+.block, input, select, button{
+    width: 80%;   
+}
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px; /* Restrict max width */
+    width: 90%; /* Make it responsive */
+}
+
+.top .block {
+    margin: 10px;
+}
+
+.bottom>button{
+    margin: 10px;
+}
+.block>p{
+    margin: 10px auto;
+    width: 50%;
+}
+.fontsize{
+    padding-top: 20px;
+   
+}
+.textpiker{
+  
+    padding-top: 25px;
+}
+@media (max-width: 768px) {
+    .canvas {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.bottom button {
+    padding: 10px 15px;
+}
